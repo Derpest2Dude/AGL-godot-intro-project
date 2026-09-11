@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://df51plkjuegfx"]
+
+[ext_resource type="PackedScene" uid="uid://c7hlm71yjwhpt" path="res://Scenes/character.tscn" id="1_y73yu"]
+[ext_resource type="PackedScene" uid="uid://cpxy04lsrrhi5" path="res://Scenes/floor.tscn" id="2_kpgqe"]
+[ext_resource type="PackedScene" uid="uid://gch70dcsdj05" path="res://Scenes/spike.tscn" id="3_2c6h7"]
+
+[node name="LeveL" type="Node2D" unique_id=1252479448]
+
+[node name="Character" parent="." unique_id=987709742 instance=ExtResource("1_y73yu")]
+position = Vector2(1912, 1305)
+
+[node name="platforms" type="Node2D" parent="." unique_id=837639560]
+
+[node name="StaticBody2D" parent="platforms" unique_id=818747439 instance=ExtResource("2_kpgqe")]
+position = Vector2(1935, 1484)
+
+[node name="StaticBody2D2" parent="platforms" unique_id=1271629706 instance=ExtResource("2_kpgqe")]
+position = Vector2(1723.9999, 1412)
+
+[node name="StaticBody2D3" parent="platforms" unique_id=1430727446 instance=ExtResource("2_kpgqe")]
+position = Vector2(1451.0001, 1391)
+
+[node name="StaticBody2D4" parent="platforms" unique_id=1868408774 instance=ExtResource("2_kpgqe")]
+position = Vector2(1484, 1573)
+
+[node name="StaticBody2D5" parent="platforms" unique_id=1707124045 instance=ExtResource("2_kpgqe")]
+position = Vector2(1745, 1627)
+
+[node name="StaticBody2D6" parent="platforms" unique_id=1339080001 instance=ExtResource("2_kpgqe")]
+position = Vector2(2120, 1620.0001)
+
+[node name="StaticBody2D7" parent="platforms" unique_id=1279421751 instance=ExtResource("2_kpgqe")]
+position = Vector2(2293, 1532)
+
+[node name="StaticBody2D8" parent="platforms" unique_id=1377623599 instance=ExtResource("2_kpgqe")]
+position = Vector2(2213, 1438)
+
+[node name="StaticBody2D9" parent="platforms" unique_id=552288277 instance=ExtResource("2_kpgqe")]
+position = Vector2(1314, 1480)
+
+[node name="StaticBody2D10" parent="platforms" unique_id=96244912 instance=ExtResource("3_2c6h7")]
+position = Vector2(1497.0001, 1356)
+
+[node name="StaticBody2D" parent="." unique_id=740297657 instance=ExtResource("2_kpgqe")]
+position = Vector2(1588, 1698)
+scale = Vector2(200, 1.5)

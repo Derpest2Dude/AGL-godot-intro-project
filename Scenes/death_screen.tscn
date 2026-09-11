@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cugcymr2b6yua"]
+
+[ext_resource type="Script" uid="uid://cehi1uook7chs" path="res://Scripts/restart_button.gd" id="1_8hps1"]
+
+[node name="Control" type="Control" unique_id=1109666366]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1072679044]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 253.0
+offset_right = 775.0
+offset_bottom = 399.0
+text = "you died 
+
+bruh moment"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1802270695]
+layout_mode = 0
+offset_left = 412.0
+offset_top = 439.0
+offset_right = 766.0
+offset_bottom = 584.0
+text = "restart"
+script = ExtResource("1_8hps1")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

@@ -17,6 +17,11 @@ position = Vector2(1935, 1484)
 [node name="StaticBody2D2" parent="platforms" unique_id=1271629706 instance=ExtResource("2_kpgqe")]
 position = Vector2(1723.9999, 1412)
 
+[node name="StaticBody2D11" parent="platforms" unique_id=1187601395 instance=ExtResource("2_kpgqe")]
+position = Vector2(1219.9996, 1287)
+rotation = -1.5889199
+scale = Vector2(11.04, 1.5)
+
 [node name="StaticBody2D3" parent="platforms" unique_id=1430727446 instance=ExtResource("2_kpgqe")]
 position = Vector2(1451.0001, 1391)
 
@@ -40,6 +45,10 @@ position = Vector2(1314, 1480)
 
 [node name="StaticBody2D10" parent="platforms" unique_id=96244912 instance=ExtResource("3_2c6h7")]
 position = Vector2(1497.0001, 1356)
+
+[node name="StaticBody2D12" parent="platforms" unique_id=282999779 instance=ExtResource("3_2c6h7")]
+position = Vector2(1256, 1255)
+rotation = 1.5521028
 
 [node name="StaticBody2D" parent="." unique_id=740297657 instance=ExtResource("2_kpgqe")]
 position = Vector2(1588, 1698)

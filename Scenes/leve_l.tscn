@@ -33,7 +33,7 @@ position = Vector2(2120, 1620.0001)
 position = Vector2(2293, 1532)
 
 [node name="StaticBody2D8" parent="platforms" unique_id=1377623599 instance=ExtResource("2_kpgqe")]
-position = Vector2(2213, 1438)
+position = Vector2(2219, 1333)
 
 [node name="StaticBody2D9" parent="platforms" unique_id=552288277 instance=ExtResource("2_kpgqe")]
 position = Vector2(1314, 1480)

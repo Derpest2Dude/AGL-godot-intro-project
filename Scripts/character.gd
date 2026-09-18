@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var health: HealthComponent
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -450.0
+const JUMP_VELOCITY = -4500.0
 
 func _ready() -> void:
 	health.died.connect(_on_died)

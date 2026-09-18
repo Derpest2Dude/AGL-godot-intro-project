@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bovtb05lxgfs4"]
+
+[ext_resource type="Script" uid="uid://xu0dr4fipqwk" path="res://Scripts/character.gd" id="1_1j1k7"]
+[ext_resource type="Texture2D" uid="uid://bl1a8omwy5ac2" path="res://Sprites/icon.svg" id="2_f3ols"]
+[ext_resource type="Script" uid="uid://do3h8ejivgn6r" path="res://Scripts/health_component_script.gd" id="3_4ex0h"]
+[ext_resource type="Script" uid="uid://cxxkpb8j00wkj" path="res://Scripts/hurt_component_script.gd" id="4_i8x5b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjt0s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3g7ld"]
+
+[node name="Character" type="CharacterBody2D" unique_id=987709742 node_paths=PackedStringArray("health")]
+script = ExtResource("1_1j1k7")
+health = NodePath("HealthComponent")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2061627560]
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2_f3ols")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1713563248]
+scale = Vector2(1.75, 1.75)
+shape = SubResource("RectangleShape2D_pjt0s")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=940110217]
+
+[node name="HealthComponent" type="Node" parent="." unique_id=2066332417 node_paths=PackedStringArray("healthBar")]
+script = ExtResource("3_4ex0h")
+healthBar = NodePath("../ProgressBar")
+metadata/_custom_type_script = "uid://do3h8ejivgn6r"
+
+[node name="HurtboxComponent" type="Area2D" parent="." unique_id=649425792 node_paths=PackedStringArray("health_component")]
+script = ExtResource("4_i8x5b")
+health_component = NodePath("../HealthComponent")
+metadata/_custom_type_script = "uid://cxxkpb8j00wkj"
+
+[node name="HurtboxArea" type="CollisionShape2D" parent="HurtboxComponent" unique_id=488077518]
+scale = Vector2(2.26, 2.26)
+shape = SubResource("RectangleShape2D_3g7ld")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1184403512]
+offset_left = -77.0
+offset_top = -90.0
+offset_right = 77.0
+offset_bottom = -23.0
+step = 1.0
+metadata/_edit_use_anchors_ = true
